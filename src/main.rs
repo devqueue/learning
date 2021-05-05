@@ -14,7 +14,10 @@
 // mod conditionals;
 // mod loops;
 // mod functions;
-mod pointer_ref;
+// mod pointer_ref;
+// mod structs;
+// mod enums;
+mod cli;
 
 // GLOBAL VARIABLE DECLARATION
 const _MEANING_OF_LIFE:u8 = 42;  // No fixed adress
@@ -35,7 +38,10 @@ fn main() {
     // conditionals::run();
     // loops::run();
     // functions::run();
-    pointer_ref::run();
+    // pointer_ref::run();
+    // structs::run();
+    // enums::run();
+    cli::run();
 
     /*
 
