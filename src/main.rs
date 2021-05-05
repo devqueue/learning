@@ -12,7 +12,9 @@
 // mod scope_and_shadowing;
 // mod stack_and_heap;
 // mod conditionals;
-mod loops;
+// mod loops;
+// mod functions;
+mod pointer_ref;
 
 // GLOBAL VARIABLE DECLARATION
 const _MEANING_OF_LIFE:u8 = 42;  // No fixed adress
@@ -31,7 +33,9 @@ fn main() {
     // tuples::run();
     // vectors::run();
     // conditionals::run();
-    loops::run();
+    // loops::run();
+    // functions::run();
+    pointer_ref::run();
 
     /*
 
