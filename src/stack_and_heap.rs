@@ -12,7 +12,7 @@ fn origin() -> Point{
 
 pub fn sh(){
     let p1 = origin();
-    let p2 = Box::new(origin());
+    let p2 = Box::new(origin()); //Heap
 
     println!("P1 takes {}", mem::size_of_val(&p1));
     println!("P2 takes {}", mem::size_of_val(&p2));
