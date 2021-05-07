@@ -14,18 +14,21 @@ pub fn run(){
     // While Loop
     while count <= 100{
         if count % 15 == 0{
-            println!("FIZZBUZZ")
+            println!("FIZZBUZZ");
         }
         else if count % 3 == 0{
-            println!("FIZZ")
+            println!("FIZZ");
+        }
+        else if count == 20{
+            continue;
         }
         else if count % 5 == 0{
-            println!("BUZZ")
+            println!("BUZZ");
         }
         else{
-            println!("{}", count)
+            println!("{}", count);
         }
-        count+=1
+        count+=1;
     }
 
     // For Range loop
