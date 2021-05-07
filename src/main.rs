@@ -24,7 +24,7 @@ const _MEANING_OF_LIFE:u8 = 42;  // No fixed adress
 static mut _MEANING_LIFE:u16 = 32; // issue with memory safety because varibale is gloabl and mutable
 
 fn main() {
-    println!("Hello, world!");
+    println!("HELLO, WORLD!");
     // operators::operator();
     // scope_and_shadowing::scope_shadowing();
     // stack_and_heap::sh();
