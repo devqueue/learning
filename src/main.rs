@@ -17,7 +17,8 @@
 // mod pointer_ref;
 // mod structs;
 // mod enums;
-mod cli;
+// mod cli;
+mod match_case;
 
 // GLOBAL VARIABLE DECLARATION
 const _MEANING_OF_LIFE:u8 = 42;  // No fixed adress
@@ -41,7 +42,8 @@ fn main() {
     // pointer_ref::run();
     // structs::run();
     // enums::run();
-    cli::run();
+    // cli::run();
+    match_case::run(7);
 
     /*
 
