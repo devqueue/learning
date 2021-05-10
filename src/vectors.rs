@@ -40,6 +40,50 @@ pub fn run(){
         *x *=2;
     }
 
-    println!("Numbers Vec: {:?}", numbers_mut)
+    println!("Numbers Vec: {:?}", numbers_mut);
 
+    // pluralsight code
+    let mut a = Vec::new();
+    a.push(1);
+    a.push(2);
+    a.push(3);
+    println!("{:?}", a);
+
+    // index types
+
+    /* i32 will not work because indexies cannot be signed values and 
+    cannot be 32 bit on a 64 bit machine hence usize must be used 
+    / let index:i32 = 0; 
+    */
+    let index:usize = 0;
+    println!("a[0] = {}", a[index]);
+
+    /* in a vector you cannot know how many elements exist at compile 
+    time hence if an element out of bounds is acessed the program willl
+    crash
+    To prevent this we can use a vector.get() method which returns an 
+    option type
+    */
+
+    // option
+    match a.get(6){
+        Some(x) => println!("a[6] = {}", x),
+        None => println!("No such element found")
+    }
+
+    // iteration over vectors
+
+    for i in &a{
+        println!("{}", i);
+    }
+
+    // removing elements
+    let lst = a.pop(); // returns an option
+    println!("{:?}", lst);
+
+    // let Some(last_elem) = a.pop();  // not valid because a.pop might return a none hence it cannot be assigned to a Some(x)
+
+    while let Some(x) = a.pop(){
+        println!("{}", x);
+    }
 }
