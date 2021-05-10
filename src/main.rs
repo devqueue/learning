@@ -18,11 +18,13 @@
 // mod structs;
 // mod enums;
 // mod cli;
-mod match_case;
+// mod match_case;
+// mod optiont;
+
 
 // GLOBAL VARIABLE DECLARATION
-const _MEANING_OF_LIFE:u8 = 42;  // No fixed adress
-static mut _MEANING_LIFE:u16 = 32; // issue with memory safety because varibale is gloabl and mutable
+const MEANING_OF_LIFE:u8 = 42;  // No fixed adress
+static mut MEANING_LIFE:u16 = 32; // issue with memory safety because varibale is gloabl and mutable
 
 fn main() {
     println!("HELLO, WORLD!");
@@ -36,6 +38,7 @@ fn main() {
     // strings::run();
     // tuples::run();
     // vectors::run();
+    // arrays::run();
     // conditionals::run();
     // loops::run();
     // functions::run();
@@ -43,17 +46,17 @@ fn main() {
     // structs::run();
     // enums::run();
     // cli::run();
-    match_case::run(7);
+    // match_case::run(7);
+    // optiont::run()
 
-    /*
+    
 
     println!("MEANING OF LIFE {}", MEANING_OF_LIFE);
-
     // My promise that everything shall work fine
     unsafe{
         MEANING_LIFE=77;
         println!("{}", MEANING_LIFE)
     }
 
-    */
+
 }
