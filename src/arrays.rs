@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 // Arrays - Fixed list where elements are the same data types
 use std::mem;
 
@@ -25,5 +26,29 @@ pub fn run(){
 
     // get slice
     let slice: &[i32] = &numbers[0..2];
-    println!("slice: {:?}", slice)
+    println!("slice: {:?}", slice);
+
+    // pluralsight code
+    let b = [1; 10] ;// 10 1s in the array
+    let _c = [1u16; 10] ;// 16 bit ones are sent (takes less space in memory) 
+
+    for i in 0..b.len(){
+        println!("{}", b[i])
+    }
+
+    // multi dimentional array
+
+    let matrix: [[f32;3]; 2] = [
+        [1.0, 0.0, 0.0],
+        [0.0, 2.0, 0.0]
+    ];
+    println!("{:?}", matrix);
+
+    for i in 0..matrix.len(){
+        for j in 0..matrix[i].len(){
+            if i == j{
+                println!("matrix[{}][{}] = {}", i, j, matrix[i][j]);
+            }
+        }
+    }
 }
