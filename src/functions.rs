@@ -1,5 +1,10 @@
-
 // Functions - Used to store blocks of code for re-use
+
+fn increase(x: &mut i32){
+    *x+=1       // dereferencing the mutable
+}
+
+
 pub fn run(){
     greeting("hello", "Haziq");
     
@@ -10,7 +15,12 @@ pub fn run(){
     // closure
     let n3:i32 = 10;
     let add_nums = | n1:i32, n2:i32 | n1+n2+n3;  // main advantage: can use global vars like n3
-    println!("Closure sum : {}", add_nums(3,3))
+    println!("Closure sum : {}", add_nums(3,3));
+
+    // pluralsight
+    let mut a = 10;
+    increase(&mut a);
+    println!("z = {}", a);
 
 }
 
